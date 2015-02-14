@@ -1,0 +1,35 @@
+<md-toolbar>
+    <div class="md-toolbar-tools">
+        <md-button ng-click="toggleSidenav()" aria-label="Menu">
+            <md-icon md-svg-icon="menu"></md-icon>
+        </md-button>
+        <h2 class="md-toolbar-tools">
+            <span>Toolbar</span>
+        </h2>
+        <md-button ng-click="" aria-label="more">
+            <md-icon md-svg-icon="more"></md-icon>
+        </md-button>
+    </div>
+</md-toolbar>
+<md-button class="md-fab add" ui-sref="main.add">
+    <md-icon md-svg-icon="add"></md-icon>
+</md-button>
+<md-content>
+    <md-list>
+        <md-item ng-repeat="item in todos">
+            <md-item-content>
+                <div class="md-tile-left">
+                    <img ng-src="{{item.face}}" class="face" alt="{{item.who}}">
+                </div>
+                <div class="md-tile-content">
+                    <h3>{{item.what}}</h3>
+                    <h4>{{item.who}}</h4>
+
+                    <p>
+                        {{item.notes}}
+                    </p>
+                </div>
+            </md-item-content>
+        </md-item>
+    </md-list>
+</md-content>

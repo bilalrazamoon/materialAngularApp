@@ -1,0 +1,39 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+.face {
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    width: 48px;
+    margin: 16px;
+}
+
+.md-fab.add{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.md-fab.done{
+    position: fixed;
+    top: 160px;
+    right: 20px;
+}
+md-toolbar.noShadow{
+    box-shadow: none;
+}
+md-toolbar.fixed{
+    position: fixed;
+}
+md-content.darkBack{
+    background-color: rgb(63,81,181);
+}
+.paddingContent{
+    padding-top: 186px;
+}
