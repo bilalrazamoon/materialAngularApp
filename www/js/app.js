@@ -3,6 +3,9 @@ angular.module('app', ['ngMaterial','ui.router'] )
         $mdThemingProvider.theme('default')
             .primaryPalette('indigo')
             .accentPalette('pink');
+        $mdThemingProvider.theme('addTheme')
+            .primaryPalette('teal')
+            .accentPalette('amber');
         $mdIconProvider
             .icon('add', 'img/icons/add.svg', 24)
             .icon('more', 'img/icons/more.svg', 24)

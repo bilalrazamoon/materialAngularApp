@@ -37,3 +37,16 @@ md-content.darkBack{
 .paddingContent{
     padding-top: 186px;
 }
+
+.banner{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
