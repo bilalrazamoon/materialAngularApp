@@ -1,4 +1,7 @@
-angular.module('app', ['ngMaterial','ui.router'] )
+angular.module('app', ['ngMaterial','ui.router','ngAnimate'] )
+    .run(function($rootScope){
+        $rootScope.show=false;
+    })
     .config(function($stateProvider,$urlRouterProvider, $mdIconProvider, $mdThemingProvider){
         $mdThemingProvider.theme('default')
             .primaryPalette('indigo')
@@ -23,7 +26,12 @@ angular.module('app', ['ngMaterial','ui.router'] )
             })
             .state('main.add',{
                 url:'/add',
-                templateUrl:'templates/add.html'
+                views: {
+                    add:{
+                    templateUrl:'templates/add.html'
+                    }
+                }
+
             })
         ;
         $urlRouterProvider.otherwise('home');

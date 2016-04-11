@@ -1,17 +1,17 @@
 <md-toolbar>
     <div class="md-toolbar-tools">
-        <md-button ng-click="toggleSidenav()" aria-label="Menu">
+        <div class="md-button" ng-click="toggleSidenav()" aria-label="Menu"  md-ink-ripple md-ink-ripple-checkbox>
             <md-icon md-svg-icon="menu"></md-icon>
-        </md-button>
+        </div>
         <h2 class="md-toolbar-tools">
             <span>Toolbar</span>
         </h2>
-        <md-button ng-click="" aria-label="more">
+        <div class="md-button" ng-click="" aria-label="More" md-ink-ripple md-ink-ripple-checkbox>
             <md-icon md-svg-icon="more"></md-icon>
-        </md-button>
+        </div>
     </div>
 </md-toolbar>
-<md-button class="md-fab add" ui-sref="main.add">
+<md-button class="md-fab add" ng-click="show=!show">
     <md-icon md-svg-icon="add"></md-icon>
 </md-button>
 <md-content>

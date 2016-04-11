@@ -50,3 +50,31 @@ md-content.darkBack{
     width: 100%;
     height: 100%;
 }
+
+/*ui-view*/
+
+.slide-in-up {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+    background-color: #fff;
+    pointer-events: auto;
+}
+
+.slide-in-up.ng-enter, .slide-in-up > .ng-enter {
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+    transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+}
+
+.slide-in-up.ng-enter-active, .slide-in-up > .ng-enter-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slide-in-up.ng-leave, .slide-in-up > .ng-leave {
+     -webkit-transition: all ease-in-out 250ms;
+     transition: all ease-in-out 250ms;  }

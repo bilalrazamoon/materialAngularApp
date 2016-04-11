@@ -1,4 +1,4 @@
-<ui-view></ui-view>
+<div ui-view></div>
 <div layout="row" flex>
     <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
             <md-content layout="column" flex class="md-padding">
@@ -7,4 +7,72 @@
                 </div>
             </md-content>
     </md-sidenav>
+</div>
+<div class="slide-in-up" ng-animate="" ng-show="show">
+    <div md-theme="addTheme">
+        <md-toolbar class="noShadow fixed">
+            <div class="md-toolbar-tools">
+                <div class="md-button" ui-sref="main.home" aria-label="Back" md-ink-ripple md-ink-ripple-checkbox>
+                    <md-icon md-svg-icon="back"></md-icon>
+                </div>
+                <div class="md-toolbar-tools">
+                    <span>Add New</span>
+                </div>
+                <div class="md-button" ng-click="" aria-label="More" md-ink-ripple md-ink-ripple-checkbox>
+                    <md-icon md-svg-icon="more"></md-icon>
+                </div>
+            </div>
+            <div layout="row" layout-sm="column" layout-padding laypout-fill style="font-size:1.2em">
+                <md-input-container class="md-accent">
+                    <label class="md-accent">Title</label>
+                    <input ng-model="user.title" class="md-accent">
+                </md-input-container>
+                <md-input-container class="md-accent">
+                    <label>Email</label>
+                    <input ng-model="user.email" type="email">
+                </md-input-container>
+            </div>
+        </md-toolbar>
+        <md-button class="md-fab done">
+            <md-icon md-svg-icon="check"></md-icon>
+        </md-button>
+        <div layout="column" class="paddingContent">
+            <md-content class="md-padding">
+                <form name="userForm">
+                    <div layout layout-sm="column">
+                        <md-input-container flex>
+                            <label>First Name</label>
+                            <input ng-model="user.firstName" placeholder="Placeholder text">
+                        </md-input-container>
+                        <md-input-container flex>
+                            <label>Last Name</label>
+                            <input ng-model="theMax">
+                        </md-input-container>
+                    </div>
+                    <md-input-container flex>
+                        <label>Address</label>
+                        <input ng-model="user.address">
+                    </md-input-container>
+                    <div layout layout-sm="column">
+                        <md-input-container flex>
+                            <label>City</label>
+                            <input ng-model="user.city">
+                        </md-input-container>
+                        <md-input-container flex>
+                            <label>State</label>
+                            <input ng-model="user.state">
+                        </md-input-container>
+                        <md-input-container flex>
+                            <label>Postal Code</label>
+                            <input ng-model="user.postalCode">
+                        </md-input-container>
+                    </div>
+                    <md-input-container flex>
+                        <label>Biography</label>
+                        <textarea ng-model="user.biography" md-maxlength="150"></textarea>
+                    </md-input-container>
+                </form>
+            </md-content>
+        </div>
+    </div>
 </div>
